@@ -9,6 +9,10 @@
 local gunfuncs = {}
 local GunStats = require(game:GetService("ReplicatedStorage").Projectiles.ProjectileStatsModule)
 
+for i, v in pairs(GunStats.get()) do
+    v.Mode = 1
+end
+
 gunfuncs.setFireRate = function(Rate)
     for i, v in pairs(GunStats.get()) do
         v.FireRate = Rate
