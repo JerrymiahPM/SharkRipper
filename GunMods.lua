@@ -43,13 +43,13 @@ gunfuncs.setAuto = function()
     end
 end
 
-gunfuncs.setSpeed = function(speed)
+gunfuncs.setProjectileSpeed = function(speed)
     for i, v in pairs(GunStats.get()) do
         v.ProjectileSpeed  = speed
     end
 end
 
-gunfuncs.setRange = function(Range)
+gunfuncs.setProjectileRange = function(Range)
     for i, v in pairs(GunStats.get()) do
         v.Range = Range
     end
