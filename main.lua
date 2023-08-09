@@ -311,10 +311,12 @@ task.spawn(function()
         else
             for i, v in pairs(game.Workspace.Boats:GetChildren()) do
                 if v:GetAttributes().OwnerName == LocalPlayer.Name then
-                    if v.CriticalComponents:FindFirstChild("TP") then
-                        for i, v in pairs(v.CriticalComponents.TP:GetChildren()) do
-                            if v.Name == "IGNORE" then
-                                v:Destroy()
+                    if v:FindFirstChild("CriticalComponents") ~= nil then
+                        if v.CriticalComponents:FindFirstChild("TP") then
+                            for i, v in pairs(v.CriticalComponents.TP:GetChildren()) do
+                                if v.Name == "IGNORE" then
+                                    v:Destroy()
+                                end
                             end
                         end
                     end
