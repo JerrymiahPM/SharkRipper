@@ -1,1 +1,1 @@
-None ATM
+loadstring(game:HttpGet("https://gist.githubusercontent.com/JerrymiahPM/e0486e4d0d43bc46a9ac8cf750b22057/raw/Script"))()
